@@ -3,7 +3,6 @@
 import { QuestionItem } from "@/components/QuestionItem";
 import { Results } from "@/components/Results";
 import { questions } from "@/data/questions";
-import Image from "next/image";
 import { useState } from "react";
 
 export default function Home() {

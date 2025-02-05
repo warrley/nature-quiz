@@ -1,5 +1,5 @@
 import { Question } from "@/types/Questions"
-import { use, useState } from "react";
+import { useState } from "react";
 
 type Props = {
     question: Question;
