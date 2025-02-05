@@ -7,12 +7,12 @@ type Props = {
 
 export const Results = ({ questions, answers }: Props) => {
     return (
-        <div>
+        <div className="">
             {questions.map((item, key) => (
                 <div key={key} className="mb-3">
                     <div className="font-bold">{key + 1}. {item.question}</div>
                     <div>
-                        <span>{item.answer === answers[key] ? 'got it right' : "got the question wrong"} - </span>
+                        <span className={`${item.answer === answers[key] ? 'text-green-600' : 'text-red-600'} font-bold`}>{item.answer === answers[key] ? 'got it right' : "got the question wrong"} - </span>
                         {item.options[item.answer]}
                     </div>
                 </div>

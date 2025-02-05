@@ -8,7 +8,7 @@ import { useState } from "react";
 export default function Home() {
   const [answers, setAnswers] = useState<number[]>([])
   const [currentQuestion, setCurrentQuestion] = useState(0)
-  const title = "physicist quiz"
+  const title = "nature quiz"
   const [showResult, setShowResult] = useState(false)
 
   const loadNextQuestion = () => {
@@ -31,8 +31,8 @@ export default function Home() {
   }
 
   return (
-    <div className="h-screen w-full bg-sky-500 flex items-center justify-center">
-      <div className="w-full max-w-xl rounded-md bg-white text-black shadow shadow-black">
+    <div className={`w-full bg-sky-500 flex items-center justify-center ${!showResult ? 'h-screen' : '' }`}>
+      <div className="my-6 w-full max-w-xl rounded-md bg-white text-black shadow shadow-black">
         <div className="p-5 font-bold text-2xl border-b border-gray-300">{title}</div>
         <div className="p-5">
           {!showResult && 
