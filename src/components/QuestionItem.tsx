@@ -24,13 +24,13 @@ export const QuestionItem = ({ question, count, onAnswer }: Props) => {
 
     return (
         <div>
-            <div className="text-3xl font-bold mb-5">{count}. {question.question}</div>
+            <div className="text-lg font-bold mb-5">{count}. {question.question}</div>
             <div>
                 {question.options.map((item, key) => (
                     <div
                     key={key}
                     onClick={() => checkQuestion(key)}
-                    className={`p-3 bg-gray-400 border border-black rounded-lg m-3  transition-all duration-400 cursor-pointer text-white
+                    className={`p-3 bg-gray-400 border border-black rounded-lg mb-2 transition-all duration-400 cursor-pointer text-white
                     
                     ${selectedAnsewer !== null ? ' cursor-auto' : 'hover:bg-sky-300'}
                     ${selectedAnsewer !== null && selectedAnsewer === question.answer && selectedAnsewer === key && 'bg-green-700 border-green-900'}

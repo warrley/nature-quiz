@@ -32,7 +32,7 @@ export default function Home() {
 
   return (
     <div className={`w-full bg-sky-500 flex items-center justify-center h-screen`}>
-      <div className="my-6 w-2/3 md:w-auto rounded-md bg-white text-black shadow shadow-black">
+      <div className="my-6 w-5/6 md:w-auto rounded-md bg-white text-black shadow shadow-black">
         <div className="p-5 font-bold text-2xl border-b border-gray-300">{title}</div>
         <div className="p-5">
           {!showResult && 
