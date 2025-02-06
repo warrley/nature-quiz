@@ -14,7 +14,7 @@ export const questions: Question[] = [
     {
         question: "who's discovery radioactivy?",
         options: ["marie", "piere", "eisnten", "lavosier"],
-        answer: 2
+        answer: 0
     },
     {
         question: "which component is responsible for obtaining energy from the sun?",
