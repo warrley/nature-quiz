@@ -13,7 +13,7 @@ export const questions: Question[] = [
     },
     {
         question: "who's discovery radioactivy?",
-        options: ["marie", "piere", "eisnten", "lavosier"],
+        options: ["marie", "pierre", "eisnten", "lavosier"],
         answer: 0
     },
     {

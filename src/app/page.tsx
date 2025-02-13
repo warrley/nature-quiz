@@ -32,8 +32,8 @@ export default function Home() {
   }
 
   return (
-    <div className={`w-full bg-sky-500 flex items-center justify-center h-screen`}>
-      <div className="my-6 w-5/6 md:w-auto rounded-md bg-white text-black shadow shadow-black">
+    <div className={`w-full bg-sky-500 dark:bg-zinc-900 flex items-center justify-center h-screen`}>
+      <div className="my-6 w-5/6 md:w-auto dark:text-white rounded-md bg-white dark:bg-sky-800 text-black shadow shadow-black">
         <div className="p-5 font-bold text-2xl border-b border-gray-300 flex justify-between">
           <p>{title}</p>
           <ToggleTheme/>
@@ -55,7 +55,7 @@ export default function Home() {
           `${currentQuestion + 1} de ${questions.length} pergunta${questions.length > 1 ? "s" : ""}`
           }
           {showResult &&
-            <button onClick={handleReset} className="px-3 py-2 rounded-md bg-blue-800 text-white"> reset quiz</button>
+            <button onClick={handleReset} className="dark:bg-white dark:text-black px-3 py-2 rounded-md bg-blue-800 text-white"> reset quiz</button>
           }
         </div>
       </div>
